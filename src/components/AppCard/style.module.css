@@ -1,0 +1,12 @@
+.appCard {
+  width: fit-content;
+  padding: 10px;
+  border: 1px solid black;
+}
+
+.appActionsWrapper {
+  margin-top: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}

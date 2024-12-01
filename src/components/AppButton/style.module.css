@@ -1,0 +1,31 @@
+.appButton {
+  background-color: #333;
+  color: #fff;
+  border: 2px solid #555;
+  padding: 5px 10px;
+  font-size: 10px;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+.appButton:hover {
+  background-color: #444;
+}
+
+.appButton:active {
+  background-color: #222;
+}
+
+.appButton:focus {
+  outline: 2px solid #777;
+}
+
+.appButton:disabled {
+  background-color: #555;
+  color: #aaa;
+  border-color: #666;
+  cursor: not-allowed;
+}

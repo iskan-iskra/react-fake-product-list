@@ -1,0 +1,48 @@
+.header {
+  display: flex;
+  gap: 8px;
+  background-color: white;
+  position: sticky;
+  top: 0;
+  left: 0;
+  padding-bottom: 8px;
+  margin-bottom: 8px;
+  border-bottom: 1px solid black;
+  flex-direction: row-reverse;
+}
+
+.header > * {
+  max-width: 50%;
+  width: 50%;
+}
+
+.main {
+  display: flex;
+  gap: 8px;
+  flex-direction: row-reverse;
+}
+
+.main > * {
+  max-width: 50%;
+  width: 50%;
+}
+
+@media screen and (max-width: 600px) {
+  .header > * {
+    max-width: 100%;
+    width: 100%;
+  }
+
+  .main > * {
+    max-width: 100%;
+    width: 100%;
+  }
+
+  .main {
+    flex-direction: column-reverse;
+  }
+
+  .header {
+    flex-direction: column-reverse;
+  }
+}
