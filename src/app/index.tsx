@@ -52,7 +52,7 @@ const App: FunctionComponent = () => {
   const selectedProductListCount = useMemo<string | null>(
     () =>
       selectedProductList.length
-        ? `selected: ${selectedProductList.length}/${selectedProductListRestrictionCount}`
+        ? `selected: ${selectedProductList.length} / ${selectedProductListRestrictionCount}`
         : null,
     [selectedProductList, selectedProductListRestrictionCount]
   );
