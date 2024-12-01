@@ -79,7 +79,7 @@ const App: FunctionComponent = () => {
           }
         />
         <AppList
-          title={<h3>selectedList:</h3>}
+          title={<h3>selected-list:</h3>}
           list={
             !!selectedProductList.length &&
             selectedProductList.map((item) => (
