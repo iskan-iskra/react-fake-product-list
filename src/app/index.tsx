@@ -25,9 +25,10 @@ const App: FunctionComponent = () => {
     setProductCatalog({ multiSelect: data1, singleSelect: data2 });
   }, []);
 
-  const getProductCatalogWithTimeMeasure = useCallback(async () => {
-    return await measureExecutionTime(getProductCatalog)();
-  }, [getProductCatalog]);
+  const getProductCatalogWithTimeMeasure = useCallback(
+    () => measureExecutionTime(getProductCatalog)(),
+    [getProductCatalog]
+  );
 
   const { errorMessage, isLoading, requestHandler } = useAsyncRequest(
     getProductCatalogWithTimeMeasure
