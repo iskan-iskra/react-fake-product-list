@@ -116,7 +116,7 @@ const App: FunctionComponent = () => {
       {!isLoading && !errorMessage && productCatalog && (
         <main className={style.main}>
           <AppList
-            title={<h3>Items:</h3>}
+            title={<h3>Items single-select:</h3>}
             list={productCatalog.singleSelect.map((item) => (
               <AppCard
                 key={item.id}
@@ -133,7 +133,7 @@ const App: FunctionComponent = () => {
             ))}
           />
           <AppList
-            title={<h3>Items 2:</h3>}
+            title={<h3>Items multi-select:</h3>}
             list={productCatalog.multiSelect.map((item) => (
               <AppCard
                 key={item.id}
